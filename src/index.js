@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const TASKLIST = [
+  { id: "todo-0", name: "Observe", completed: true },
+  { id: "todo-1", name: "Orient", completed: false },
+  { id: "todo-2", name: "Decide", completed: false },
+  { id: "todo-3", name: "Act", completed: false }
+];
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App  tasks={TASKLIST} />
   </React.StrictMode>,
   document.getElementById('root')
 );
