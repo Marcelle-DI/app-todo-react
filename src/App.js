@@ -55,7 +55,9 @@ function App(props) {
       if (id === task.id) {
         //
         return {...task, name: newName}
+        console.log(`{...task, name: newName}: ${newName}`);
       }
+      console.log(`task: ${task}`);
       return task;
     });
     setTasks(editedTaskList);
